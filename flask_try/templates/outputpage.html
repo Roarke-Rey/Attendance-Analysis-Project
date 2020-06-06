@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1>Output Page</h1>
+    </div>
+    <div>
+            <img src="http://localhost:5000/{{link1}}", alt=" " />
+    </div>
+    <div>
+            <img src="http://localhost:5000/{{link2}}", alt=" " />
+    </div>
+    <div>
+            <a href={{url_for(back)}}>Go back</a>
+    </div>
+{% endblock %}

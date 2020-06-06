@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1>Overall Attendance</h1>
+    </div>
+    <br>
+    <form method="POST">
+        <div>
+            <p>Select the Subject &nbsp &nbsp
+            <select name="Subject">
+                <option value="COA">COA</option>
+                <option value="MP">MP</option>
+                <option value="CG">CG</option>
+                <option value="ADS">ADS</option>
+                <option value="PPL">PPL</option>
+                <option value="All Subjects">All Subjects</option>
+            </select>
+            </p>
+        </div>
+        <br>
+        <div>
+            <p>Select the Graph for &nbsp; &nbsp;
+            <select name = "Type">
+                <option value="Absent_Days">Absent Days</option>
+                <option value="Present_Days">Present Days</option>
+                <option value="Absent_Percentage">Absent Percentage</option>
+                <option value="Present_Percentage">Present Percentage</option>
+            </select>
+            </p>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
